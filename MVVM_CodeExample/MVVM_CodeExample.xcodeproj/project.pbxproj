@@ -16,6 +16,8 @@
 		2856F48927C939180041C02A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2856F48727C939180041C02A /* LaunchScreen.storyboard */; };
 		2856F49227CAAF590041C02A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856F49127CAAF590041C02A /* User.swift */; };
 		2859165C27CD12A600DE2ECB /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2859165B27CD12A600DE2ECB /* Observable.swift */; };
+		2859165F27CD15D700DE2ECB /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2859165E27CD15D700DE2ECB /* UserViewModel.swift */; };
+		2859166227CD195F00DE2ECB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2859166127CD195F00DE2ECB /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		2856F48A27C939180041C02A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2856F49127CAAF590041C02A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2859165B27CD12A600DE2ECB /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		2859165E27CD15D700DE2ECB /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		2859166127CD195F00DE2ECB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				2856F48227C939170041C02A /* MVVM_CodeExample.xcdatamodeld */,
 				2856F49127CAAF590041C02A /* User.swift */,
 				2859165B27CD12A600DE2ECB /* Observable.swift */,
+				2859165E27CD15D700DE2ECB /* UserViewModel.swift */,
+				2859166127CD195F00DE2ECB /* NetworkService.swift */,
 			);
 			path = MVVM_CodeExample;
 			sourceTree = "<group>";
@@ -148,9 +154,11 @@
 			files = (
 				2856F49227CAAF590041C02A /* User.swift in Sources */,
 				2856F47E27C939170041C02A /* ViewController.swift in Sources */,
+				2859166227CD195F00DE2ECB /* NetworkService.swift in Sources */,
 				2856F48427C939170041C02A /* MVVM_CodeExample.xcdatamodeld in Sources */,
 				2856F47A27C939170041C02A /* AppDelegate.swift in Sources */,
 				2859165C27CD12A600DE2ECB /* Observable.swift in Sources */,
+				2859165F27CD15D700DE2ECB /* UserViewModel.swift in Sources */,
 				2856F47C27C939170041C02A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

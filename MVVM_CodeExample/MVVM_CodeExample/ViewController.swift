@@ -10,20 +10,32 @@ import UIKit
 class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-    var models = [Person]()
+    
+    //private var viewModel =  UserViewModel()
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        
+        NetworkService.shared.viewModel.users.bind { [weak self] _ in
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
+        NetworkService.shared.fetchData()
+
         // Do any additional setup after loading the view.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return models.count
+     return   NetworkService.shared.viewModel.users.value?.count ?? 0
+   //     return viewModel.users.value?.count ?? 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "hh"
+        cell.textLabel?.text = NetworkService.shared.viewModel.users.value?[indexPath.row].name
         return cell
     }
 
@@ -31,10 +43,4 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     
 }
 
-struct Person {
-    let name  :  String
-    let username  : String
-    let birtDate :  Date
-    let adress  :  String
-}
 
