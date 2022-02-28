@@ -6,9 +6,9 @@
 //
 
 import Foundation
-class Model {
-    static let  shared =  Model ()
+
+struct User : Codable  {
+  
+    let name  : String
     
-    
-    init () {}
 }

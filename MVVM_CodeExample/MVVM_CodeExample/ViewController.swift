@@ -23,7 +23,7 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "Radwa"
+        cell.textLabel?.text = "hh"
         return cell
     }
 

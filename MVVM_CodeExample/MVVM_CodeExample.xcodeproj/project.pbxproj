@@ -14,7 +14,8 @@
 		2856F48427C939170041C02A /* MVVM_CodeExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2856F48227C939170041C02A /* MVVM_CodeExample.xcdatamodeld */; };
 		2856F48627C939180041C02A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2856F48527C939180041C02A /* Assets.xcassets */; };
 		2856F48927C939180041C02A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2856F48727C939180041C02A /* LaunchScreen.storyboard */; };
-		2856F49227CAAF590041C02A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856F49127CAAF590041C02A /* Model.swift */; };
+		2856F49227CAAF590041C02A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856F49127CAAF590041C02A /* User.swift */; };
+		2859165C27CD12A600DE2ECB /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2859165B27CD12A600DE2ECB /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		2856F48527C939180041C02A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2856F48827C939180041C02A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2856F48A27C939180041C02A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2856F49127CAAF590041C02A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2856F49127CAAF590041C02A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2859165B27CD12A600DE2ECB /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,8 @@
 				2856F48727C939180041C02A /* LaunchScreen.storyboard */,
 				2856F48A27C939180041C02A /* Info.plist */,
 				2856F48227C939170041C02A /* MVVM_CodeExample.xcdatamodeld */,
-				2856F49127CAAF590041C02A /* Model.swift */,
+				2856F49127CAAF590041C02A /* User.swift */,
+				2859165B27CD12A600DE2ECB /* Observable.swift */,
 			);
 			path = MVVM_CodeExample;
 			sourceTree = "<group>";
@@ -143,10 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2856F49227CAAF590041C02A /* Model.swift in Sources */,
+				2856F49227CAAF590041C02A /* User.swift in Sources */,
 				2856F47E27C939170041C02A /* ViewController.swift in Sources */,
 				2856F48427C939170041C02A /* MVVM_CodeExample.xcdatamodeld in Sources */,
 				2856F47A27C939170041C02A /* AppDelegate.swift in Sources */,
+				2859165C27CD12A600DE2ECB /* Observable.swift in Sources */,
 				2856F47C27C939170041C02A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
